@@ -10,13 +10,13 @@
 ### Linux
 
 ```sh
-git clone https://github.com/daxisunder/convert.yazi ~/.config/yazi/plugins/convert.yazi
+git clone https://github.com/atareao/convert.yazi ~/.config/yazi/plugins/convert.yazi
 ```
 
 or
 
 ```sh
-ya pkg add daxisunder/convert
+ya pkg add atareao/convert
 ```
 
 ## Usage
