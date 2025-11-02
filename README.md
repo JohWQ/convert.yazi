@@ -10,13 +10,13 @@
 ### Linux
 
 ```sh
-git clone https://github.com/atareao/convert.yazi ~/.config/yazi/plugins/convert.yazi
+git clone https://github.com/JohWQ/convert.yazi ~/.config/yazi/plugins/convert.yazi
 ```
 
 or
 
 ```sh
-ya pkg add atareao/convert
+ya pkg add JohWQ/convert
 ```
 
 ## Usage
@@ -26,18 +26,18 @@ Add this to your ~/.config/yazi/keymap.toml
 ```toml
 
 [[mgr.prepend_keymap]]
-on = ["c", "p"]
+on = ["n", "p"]
 run = "plugin convert -- --extension='png'"
-desc = "Convert selected files to PNG"
+desc = "Convert to PNG"
 
 [[mgr.prepend_keymap]]
-on = ["c", "j"]
+on = ["n", "j"]
 run = "plugin convert -- --extension='jpg'"
-desc = "Convert selected files to JPG"
+desc = "Convert to JPG"
 
 [[mgr.prepend_keymap]]
-on = ["c", "w"]
+on = ["n", "w"]
 run = "plugin convert -- --extension='webp'"
-desc = "Convert selected files to WebP"
+desc = "Convert to WebP"
 
 ```
