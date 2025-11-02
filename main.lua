@@ -12,7 +12,7 @@ local function info(content)
 end
 
 local function has_value(val)
-    local tab = { ".jpg", ".png", ".webp" }
+    local tab = { ".jpg", ".jpeg", ".png", ".webp", ".svg", ".pdf", ".gif", ".ppm", ".tif", ".tiff", ".ico", ".xpm" }
     for _, value in ipairs(tab) do
         if value == val then
             return true
@@ -51,7 +51,7 @@ return {
                     info(message)
                     return
                 end
-                local output, err = Command("magick"):arg(tostring(source)):arg(tostring(destination)):output()
+                local output, err = Command("magick"):arg("-background"):arg("none"):arg(tostring(source)):arg(tostring(destination)):output()
                 local message = ""
                 if not output or err then
                     message = string.format("Failed to convert from %s to %s. %s", source, destination, err)
